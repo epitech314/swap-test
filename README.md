@@ -2,7 +2,7 @@
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
-hardhat config:
+## hardhat config:
 
 ```
 module.exports = {
@@ -39,7 +39,34 @@ module.exports = {
   }
 };
 ```
-Try running some of the following tasks:
+
+## package.json:
+
+```
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.7"
+  },
+  "dependencies": {
+    "@json-rpc-tools/provider": "^1.7.6",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "ethers": "^6.13.2"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "hhnode": "hardhat node",
+    "deployln": "hardhat run deploy/deploy.js --network localhost",
+    "removetest": "hardhat run scripts/test.js --network localhost"
+  }
+}
+```
+
+## Try running some of the following tasks:
 
 ```shell
 npx hardhat help

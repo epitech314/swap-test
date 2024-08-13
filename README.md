@@ -7,7 +7,7 @@ hardhat config:
 ```
 module.exports = {
   solidity: {
-    compilers: [
+    compilers: [ //for various Solidity versions
       {
         version: "0.5.16",
       },
@@ -18,7 +18,7 @@ module.exports = {
         version: "0.8.24",
       },
     ],
-    settings: {
+    settings: { // for bytecode capacity
       optimizer: {
         enabled: true,
         runs: 200,
@@ -39,7 +39,6 @@ module.exports = {
   }
 };
 ```
-
 Try running some of the following tasks:
 
 ```shell

@@ -7,7 +7,7 @@ This project demonstrates a basic Hardhat use case. It comes with a sample contr
 ```
 module.exports = {
   solidity: {
-    compilers: [
+    compilers: [ //for various Solidity versions
       {
         version: "0.5.16",
       },
@@ -18,7 +18,7 @@ module.exports = {
         version: "0.8.24",
       },
     ],
-    settings: {
+    settings: { // for bytecode capacity
       optimizer: {
         enabled: true,
         runs: 200,
